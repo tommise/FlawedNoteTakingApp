@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>My Private Notes</title>
+    </head>
+
+    <body>
+        <h1>My Private Notes</h1>
+
+        <form action='logout/' method="POST">
+			{% csrf_token %}
+            <input type="submit" value="Logout"/>
+        </form>
+
+        <h2>Add new note</h2>
+
+        <form action='add/' method="POST">
+			<input type="text" name="note"/><br/>
+            <input type="submit" value="Send"/>
+        </form>
+
+		<ul>
+            {% for note in notes %}
+            <li>{{note.note}}
+            <form action='delete/{{note.id}}' method="POST">
+                {% csrf_token %}
+                <input type="submit" value="delete"/>
+            </form>
+            <br>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </body>
+</html>
+
