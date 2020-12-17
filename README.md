@@ -17,12 +17,12 @@ Clone the program to the desired folder:
 ```
 git clone https://github.com/tommise/FlawedNoteTakingApp
 ```
-Run this command from the root:
+Run this command from the same folder where manage.py is located.
 
 ```
-python3 manage.py migrate && python3 manage.py runserver
+python3 manage.py runserver
 ```
-This will first apply all the migrations and then run the server. You can access the app from your browser at localhost:8000.
+This will run the server at your localhost. You can access the app from your browser at localhost:8000.
 
 **Few login credentials for the app:**
 - baboon99 - thisismypassword
