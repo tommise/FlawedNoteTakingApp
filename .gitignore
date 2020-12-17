@@ -1,0 +1,7 @@
+.DS_Store
+___pycache___
+media
+*.log
+*.pot
+*.pyc
+*.pid
