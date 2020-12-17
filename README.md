@@ -17,7 +17,7 @@ Clone the program to the desired folder:
 ```
 git clone https://github.com/tommise/FlawedNoteTakingApp
 ```
-Run this command from the same folder where manage.py is located.
+Run this command from the same folder where manage.py is located:
 
 ```
 python3 manage.py runserver
